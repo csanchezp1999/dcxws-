@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-serif bg-gradient-to-r from-purple-300 via-purple-400 to-purple-500">
+    <div class="text-center  p-2 rounded w-2/5 mx-auto mt-6 pd-0 border-solid border border-2 border-black" style="background-image: url('https://blog.tiching.com/wp-content/uploads/2014/08/Recursos-qu%C3%ADmica.jpg'); background-size: cover; background-position: center; ">
+    <header >
+        <h1 class="text-2xl font-bold text-center mb-4 dark:text-gray-200" >Quiz sencillo: conocimientos científicos</h1>
+        <p></p>
+    </header>
+    <section id="0">
+    <div class="bg-gray-200 bg-opacity-40 rounded mt-4 w-17 items-start border-2 border-solid border-black " id="0">
+        <h3 class="text-m text-gray-950 dark:text-white font-semibold text-left p-2 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-500" id="pregunta"></h3>
+        <div class="border border-solid border-black"></div>
+        <div class="flex flex-col text-left text-s text-gray-950 dark:text-white">
+            <label for="a1">
+                <button type="button" id="A" name="p0" class=" hover:bg-green-400 text-sm text-black py-2 px-4 rounded focus:outline-none focus:bg-green-400 m-1 py-1 px-1 " onclick="Respuesta(1, this)"></button>
+            </label>
+            <label for="b1">
+                <button type="button" id="B" name="p0" class=" hover:bg-green-400 text-sm text-black py-2 px-4 rounded focus:outline-none focus:bg-green-400 m-1 py-1 px-1 text-left" text-left" onclick="Respuesta(2, this)"></button>
+            </label>
+            <label for="c1">
+                <button type="button" id="C" name="p0" class=" hover:bg-green-400 text-sm text-black py-2 px-4 rounded focus:outline-none focus:bg-green-400 m-1 py-1 px-1 text-left"onclick="Respuesta(3, this)"></button>
+            </label>
+        </div>
+    </div>
+    <button type="button" id="next" name="p0" class="hover:bg-yellow-400 text-green font-bold rounded border m-1 p-1 border border-2 border-black" onclick="siguientePregunta()">SIGUIENTE</button>
+    <div class="pd-0 text-left">
+       
+        <h2 class=" text-left p-1 m-1" id="Resultado" style="display: none;">Cantidad acertadas: <span id="resultado"> </span></h2>
+    
+        </section>
+        
+        <script src="main.js"></script>
+
+    </div>
+     
+</div>
+</body>
+</html>
